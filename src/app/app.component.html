@@ -6,8 +6,10 @@
           <th *ngFor="let col of cols">
             Header one *leads the width* (case 1)
             <div>
-              {{col.displayName}}<br>
-              <input>
+              <span class="head" style="display:block">{{col.displayName}}</span>
+              <span class="filter"  style="display:block">
+                <input>
+              </span>
             </div>
           </th>
           

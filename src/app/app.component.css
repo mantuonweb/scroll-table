@@ -11,7 +11,7 @@
 .table-container {
   overflow-y: scroll;
   height: 300px;
-  border-top: 81px solid transparent;
+  border-top: 100px solid transparent;
   border-bottom: 41px solid transparent;
 }
 
@@ -47,7 +47,7 @@ thead tr th div,
 tfoot tr td div {
   position: absolute;
   color: rgb(56, 41, 41);
-  padding: 10px;
+  /* padding: 10px; */
   margin-left: -10px;
   line-height: normal;
   width: 100%;
@@ -55,11 +55,18 @@ tfoot tr td div {
   text-align: left;
   font-weight: bold;
 }
+thead tr th div span{
+  border-bottom:1px solid red;
+  padding: 10px;
+}
+span.head{
+  background: red;
+}
 
-thead tr th div {
+/* thead tr th div {
   border-left: 1px solid #000;
   border-bottom: 1px solid #000;
-}
+} */
 
 /* tfoot tr td div {
   border-left: 1px solid #000;
