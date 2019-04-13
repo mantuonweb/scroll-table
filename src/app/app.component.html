@@ -3,127 +3,24 @@
     <table>
       <thead>
         <tr>
-          <th>
+          <th *ngFor="let col of cols">
             Header one *leads the width* (case 1)
-            <div class="c1">
-              Header one *leads the width* (case 1)
+            <div>
+              {{col.displayName}}
             </div>
           </th>
-          <th>
-            Header two
-            <div class="c2">
-              Header two
-            </div>
-          </th>
-          <th>
-            Header three
-            <div class="c3">
-              Header three
-            </div>
-          </th>
+          
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three [first]</td>
+        <tr *ngFor="let item of list">
+          <td *ngFor="let col of cols">
+            {{item[col.name]}}
+          </td>
+          <!-- <td>Column two *leads the width* (case 2)</td>
+          <td>Column three [first]</td> -->
         </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three</td>
-        </tr>
-        <tr>
-          <td>Column one</td>
-          <td>Column two *leads the width* (case 2)</td>
-          <td>Column three [LATEST]</td>
-        </tr>
+       
       </tbody>
       <tfoot>
         <tr>
