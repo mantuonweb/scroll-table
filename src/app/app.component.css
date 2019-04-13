@@ -10,8 +10,8 @@
 
 .table-container {
   overflow-y: scroll;
-  height: 200px;
-  border-top: 41px solid transparent;
+  height: 300px;
+  border-top: 81px solid transparent;
   border-bottom: 41px solid transparent;
 }
 
