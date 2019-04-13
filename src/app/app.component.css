@@ -8,7 +8,7 @@
 }
 
 
-.container {
+.table-container {
   overflow-y: scroll;
   height: 200px;
   border-top: 41px solid transparent;
